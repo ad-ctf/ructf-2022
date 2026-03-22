@@ -1,3 +1,4 @@
 gornilo == 0.9.3
-grpcio-tools == 1.46.1
-grpcio == 1.46.1
+grpcio-tools >= 1.62
+grpcio >= 1.62
+protobuf >= 4

@@ -1,0 +1,49 @@
+services:
+  ambulance:
+    name: Ambulance
+    checker:
+      basedir: ./checkers/ambulance
+      script: ./ambulance.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/ambulance
+  herpetophobia:
+    name: Herpetophobia
+    checker:
+      basedir: ./checkers/herpetophobia
+      script: ./herpetophobia.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/herpetophobia
+  kleptophobia:
+    name: Kleptophobia
+    checker:
+      basedir: ./checkers/kleptophobia
+      script: ./kleptophobia.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/kleptophobia
+  meds:
+    name: Meds
+    checker:
+      basedir: ./checkers/meds
+      script: ./meds.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/meds/deploy
+  prosopagnosia:
+    name: Prosopagnosia
+    checker:
+      basedir: ./checkers/prosopagnosia
+      script: ./prosopagnosia.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/prosopagnosia/deploy
+  psycho-clinic:
+    name: Psycho Clinic
+    checker:
+      basedir: ./checkers/psycho-clinic
+      script: ./psycho-clinic.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/psycho-clinic
