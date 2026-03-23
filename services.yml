@@ -47,3 +47,11 @@ services:
       setup: python3 -m pip install --break-system-packages -r requirements.txt
     vuln:
       basedir: ./services/psycho-clinic
+  schizophasia:
+    name: Schizophasia
+    checker:
+      basedir: ./checkers/schizophasia
+      script: ./schizophasia.checker.py
+      setup: python3 -m pip install --break-system-packages -r requirements.txt
+    vuln:
+      basedir: ./services/schizophasia/deploy
